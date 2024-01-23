@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NNMCreport</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+
+                <div class="header__img">
+                    <img src="./img/img_af1cc9b0864226a26aa458ca4754a1e5.png" alt="">
+                </div>
+                
+                <div class="header__title">
+                    <p>Добро пожаловать на сайт нашей медицинской клиники! Ваши отзывы важны для нас. Вы можете свободно выражать благодарность
+                    или оставить замечания, помогая нам становиться лучше. Ваше мнение — наше вдохновение к постоянному совершенствованию.
+                    Благодарим за выбор нашей клиники и доверие к нам.</p>
+                </div>
+
+            </div>
+        </div>
+        <main class="main">
+            <div class="container">
+                <form class="main__first">
+                    <p class="main__firstQuestion">
+                        Шағым / оқиға  <br>
+                        Жалоба /инцидент
+                    </p>
+                    <div>
+                        <p class="inputMar"><input type="radio" name="report" value="Жалоба " id="report" class="radioInput" > <label for="report">Шағым \ Жалоба</label><br></p>
+                        <p class="inputMar"><input type="radio" name="report" value="Инцидент" id="event" class="radioInput"> <label for="event">Оқиға \ Инцидент</label><br></p>
+                        <p class="inputMar"> <input type="radio" name="report" value="Благодарность" id="advice" checked class="radioInput"> <label for="advice">Алғыс \ ұсыныстар \ Благодарность \
+                            Предложение</label></p>
+                    </div>
+                </form>
+
+
+                <form class="main__first">
+                    <input class="main__inputs" type="number" placeholder="Номер : 777 777 77 77">
+                </form>
+
+                <form class="main__first">
+                    <input class="main__inputs" type="text" placeholder="Аты-Жөні / ФИО">
+                </form>
+
+                <form class="main__first">
+                    <input class="main__inputs" type="text" placeholder="Бөлімше / Отделение">
+                </form>
+
+                <form class="main__first">
+                    <p>Шағымның (оқиғаның) мазмұны <br>
+                        Описание жалобы (инцидента)</p>
+
+                    <textarea name="comment" id="" ></textarea>
+                </form>
+
+                <form class="btn">
+                    <button class="btn__submit">Отправить</button>
+                </form>
+            </div>
+        </main>
+
+
+        <section id="loading-overlay">
+            <div class="overlay">
+                <div class="overlay__img">
+                    <img src="./img/img_af1cc9b0864226a26aa458ca4754a1e5.png" alt="">
+                </div>
+                <p class="overlay__loading">Загрузка</p>
+            </div>
+        </section>
+
+
+
+        <section class="success">
+            <div class="success__img">
+                <img src="./img/Р1.png" alt="">
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
